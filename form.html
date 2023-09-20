@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="tab">
-        <img src="your-logo.png" alt="PhenoSense Logo" class="logo">
+        <div class="logo-box">
+            <img src="logo.png" alt="PhotoSense Logo" class="logo">
+        </div>
         <br>
         <div class="buttons">
             <a href="index.html">Home</a>
@@ -21,744 +23,128 @@
         <h1>Prakriti Assessment Form</h1>
         <h2>Answer the following questions to determine your Prakriti</h2>
     </header>
+
     <main>
         <section class="form">
-            <form action="submit.php" method="POST">
-
-                <!-- Personal Information -->
-                <h2>Personal Information</h2>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required> <br> <br>
-
-                <label for="gender">Gender:</label>
-                <input type="radio" id="male" name="gender" value="Male" required>
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="Female" required> 
-                <label for="female">Female</label> <br> <br>
-                
-                <label for="date-of-birth">Date of Birth:</label>
-                <input type="date" id="date-of-birth" name="date-of-birth" required> <br> <br>
-
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required> <br> <br>
-
-                <label for="father-name">Father's Full Name:</label>
-                <input type="text" id="father-name" name="father-name" required> <br> <br>
-
-                <label for="mother-name">Mother's Full Name:</label>
-                <input type="text" id="mother-name" name="mother-name" required> <br> <br>
-
-                <label for="place-of-birth">Place of Birth:</label>
-                <input type="text" id="place-of-birth" name="place-of-birth" required> <br> <br>
-
-                <label for="present-address">Present Address:</label>
-                <input type="text" id="present-address" name="present-address" required> <br> <br>
-
-                <label for="permanent-address">Permanent Address:</label>
-                <input type="text" id="permanent-address" name="permanent-address" required> <br> <br>
-
-                <label for="marital-status">Marital Status:</label>
-                <input type="text" id="marital-status" name="marital-status" required> <br> <br>
-
-                <label for="religion">Religion:</label>
-                <input type="text" id="religion" name="religion" required> <br> <br>
-
-                <label for="caste">Caste:</label>
-                <input type="text" id="caste" name="caste" required> <br> <br>
-
-                <label for="sub-caste">Sub-caste:</label>
-                <input type="text" id="sub-caste" name="sub-caste" required> <br> <br>
-
-                <label for="height">Height:</label>
-                <input type="text" id="height" name="height" required> <br> <br>
-
-                <label for="weight">Weight:</label>
-                <input type="text" id="weight" name="weight" required> <br> <br>
-
-                <label for="blood-group">Blood Group:</label>
-                <input type="text" id="blood-group" name="blood-group" required> <br> <br>
-
-                <label for="edu-qualification">Educational Qualification:</label>
-                <input type="text" id="edu-qualification" name="edu-qualification" required> <br> <br>
-
-                <label for="socio-economic-status">Socio-Economic Status:</label>
-                <input type="text" id="socio-economic-status" name="socio-economic-status" required> <br> <br>
-
-                <label for="contact-number">Contact Number:</label>
-                <input type="text" id="contact-number" name="contact-number" required> <br> <br>
-
-                <label for="email">Email ID:</label>
-                <input type="email" id="email" name="email" required> <br> <br>
-
-                <!-- Personal History -->
-                <h2>Personal History</h2>
-                <label for="food-habits">Food Habits:</label>
-                <input type="text" id="food-habits" name="food-habits" required> <br> <br>
-
-                <label for="micturition">Micturition:</label>
-                <input type="text" id="micturition" name="micturition" required> <br> <br>
-
-                <label for="bowel-habits">Bowel Habits:</label>
-                <input type="text" id="bowel-habits" name="bowel-habits" required> <br> <br>
-
-                <label for="sleep">Sleep:</label>
-                <input type="text" id="sleep" name="sleep" required> <br> <br>
-
-                <label for="occupation">Occupation:</label>
-                <input type="text" id="occupation" name="occupation" required> <br> <br>
-
-                <label for="prev-illness">Previous History of Illness (Yes/No):</label>
-                <input type="text" id="prev-illness" name="prev-illness" required> <br> <br>
-
-                <label for="illness-nature">If Yes, What was the nature of Illness:</label>
-                <input type="text" id="illness-nature" name="illness-nature" required> <br> <br>
-
-                <label for="illness-age">Age at which the Illness was suffered:</label>
-                <input type="text" id="illness-age" name="illness-age" required> <br> <br>
-
-                <label for="illness-duration">Duration of suffering:</label>
-                <input type="text" id="illness-duration" name="illness-duration" required> <br> <br>
-
-                <label for="medical-consultation">Medical Consultation undertaken:</label>
-                <input type="text" id="medical-consultation" name="medical-consultation" required> <br> <br>
-
-                <label for="aftermath-illness">Aftermath of Illness:</label>
-                <input type="text" id="aftermath-illness" name="aftermath-illness" required> <br> <br>
-
-                <!-- Family History -->
-                <h2>Family History</h2>
-                <label for="family-members">Number of persons in the family:</label>
-                <input type="text" id="family-members" name="family-members" required> <br> <br>
-
-                <label for="family-disease">Family History of disease:</label>
-                <input type="text" id="family-disease" name="family-disease" required> <br> <br>
-
-                <label for="consanguinity">Consanguinity:</label>
-                <input type="text" id="consanguinity" name="consanguinity" required> <br> <br>
-
-                <!-- Physical Measurements -->
-                <h2>Physical Measurements</h2>
-                <label for="head-circumference">Head Circumference (inch):</label>
-                <input type="text" id="head-circumference" name="head-circumference" required> <br> <br>
-
-                <label for="chest-circumference">Chest Circumference (inch):</label>
-                <input type="text" id="chest-circumference" name="chest-circumference" required> <br> <br>
-
-                <label for="neck-circumference">Neck Circumference (inch):</label>
-                <input type="text" id="neck-circumference" name="neck-circumference" required> <br> <br>
-
-                <label for="neck-length">Neck Length (inch):</label>
-                <input type="text" id="neck-length" name="neck-length" required> <br> <br>
-
-                <label for="upper-body-length">Upper Body Length (inch):</label>
-                <input type="text" id="upper-body-length" name="upper-body-length" required> <br> <br>
-
-                <label for="lower-body-length">Lower Body Length (inch):</label>
-                <input type="text" id="lower-body-length" name="lower-body-length" required> <br> <br>
-
-                <label for="waist">Waist (inch):</label>
-                <input type="text" id="waist" name="waist" required> <br> <br>
-
-                <label for="hip">Hip (inch):</label>
-                <input type="text" id="hip" name="hip" required> <br> <br>
-
-                <label for="waist-hip-ratio">Waist:Hip ratio:</label>
-                <input type="text" id="waist-hip-ratio" name="waist-hip-ratio" required> <br> <br>
-
-                <label for="forearm">Forearm (inch):</label>
-                <input type="text" id="forearm" name="forearm" required> <br> <br>
-
-                <label for="bmi">B.M.I :</label>
-                <input type="text" id="bmi" name="bmi" required> <br> <br>
-
-                <!-- Multiple Choice Questions -->
-                <h2>Multiple Choice Questions</h2>
-
-                <!-- Question 1: Body Frame -->
-                <fieldset>
-                    <legend>1. Body Frame:</legend>
-                    <input type="radio" id="bf-thin" name="body-frame" value="A" required>
-                    <label for="bf-thin">Thin and Lean</label><br>
-
-                    <input type="radio" id="bf-medium" name="body-frame" value="B" required>
-                    <label for="bf-medium">Medium</label><br>
-
-                    <input type="radio" id="bf-well-built" name="body-frame" value="C" required>
-                    <label for="bf-well-built">Well Built</label><br>
-                </fieldset><br>
-
-                <!-- Question 2: Eye Size -->
-                <fieldset>
-                    <legend>2. Eye Size:</legend>
-                    <input type="radio" id="eye-small" name="eye-size" value="A" required>
-                    <label for="eye-small">Small</label><br>
-
-                    <input type="radio" id="eye-medium" name="eye-size" value="B" required>
-                    <label for="eye-medium">Medium</label><br>
-
-                    <input type="radio" id="eye-large" name="eye-size" value="C" required>
-                    <label for="eye-large">Large</label><br>
-                </fieldset><br>
-
-                <!-- Question 3: Iris Color -->
-                <fieldset>
-                    <legend>3. Iris Color:</legend>
-                    <input type="radio" id="iris-black" name="iris-color" value="A" required>
-                    <label for="iris-black">Black</label><br>
-
-                    <input type="radio" id="iris-light-brown" name="iris-color" value="B" required>
-                    <label for="iris-light-brown">Light Brown</label><br>
-
-                    <input type="radio" id="iris-dark-brown" name="iris-color" value="C" required>
-                    <label for="iris-dark-brown">Dark Brown</label><br>
-
-                    <input type="radio" id="iris-greyish-blue-green" name="iris-color" value="D" required>
-                    <label for="iris-greyish-blue-green">Greyish/Blue/Green</label><br>
-                </fieldset><br>
-
-                <!-- Question 4: Sclera -->
-                <fieldset>
-                    <legend>4. Sclera:</legend>
-                    <input type="radio" id="sclera-muddy" name="sclera" value="A" required>
-                    <label for="sclera-muddy">Muddy</label><br>
-
-                    <input type="radio" id="sclera-reddish-tinge" name="sclera" value="B" required>
-                    <label for="sclera-reddish-tinge">Reddish Tinge</label><br>
-
-                    <input type="radio" id="sclera-white" name="sclera" value="C" required>
-                    <label for="sclera-white">White</label><br>
-                </fieldset><br>
-
-                <!-- Question 5: Eyebrows -->
-                <fieldset>
-                    <legend>5. Eyebrows:</legend>
-                    <input type="radio" id="eyebrows-small" name="eyebrows" value="A" required>
-                    <label for="eyebrows-small">Small</label><br>
-
-                    <input type="radio" id="eyebrows-medium" name="eyebrows" value="B" required>
-                    <label for="eyebrows-medium">Medium</label><br>
-
-                    <input type="radio" id="eyebrows-large" name="eyebrows" value="C" required>
-                    <label for="eyebrows-large">Large</label><br>
-                </fieldset><br>
-
-                <!-- Question 6: Eyelashes -->
-                <fieldset>
-                    <legend>6. Eyelashes:</legend>
-                    <input type="radio" id="eyelashes-small" name="eyelashes" value="A" required>
-                    <label for="eyelashes-small">Small</label><br>
-
-                    <input type="radio" id="eyelashes-medium" name="eyelashes" value="B" required>
-                    <label for="eyelashes-medium">Medium</label><br>
-
-                    <input type="radio" id="eyelashes-large" name="eyelashes" value="C" required>
-                    <label for="eyelashes-large">Large</label><br>
-                </fieldset><br>
-
-                <!-- Question 7: Tongue -->
-                <fieldset>
-                    <legend>7. Tongue:</legend>
-                    <input type="radio" id="tongue-dry" name="tongue" value="A" required>
-                    <label for="tongue-dry">Dry</label><br>
-
-                    <input type="radio" id="tongue-red" name="tongue" value="B" required>
-                    <label for="tongue-red">Red</label><br>
-
-                    <input type="radio" id="tongue-wet-and-shining" name="tongue" value="C" required>
-                    <label for="tongue-wet-and-shining">Wet and Shining</label><br>
-                </fieldset><br>
-
-                <!-- Question 8: Type of Hair -->
-                <fieldset>
-                    <legend>8. Type of Hair:</legend>
-                    <input type="radio" id="hair-dry-and-with-split-ends" name="hair-type" value="A" required>
-                    <label for="hair-dry-and-with-split-ends">Dry and with Split Ends</label><br>
-
-                    <input type="radio" id="hair-normal-thin-more-hair-fall" name="hair-type" value="B" required>
-                    <label for="hair-normal-thin-more-hair-fall">Normal, Thin, More Hair Fall</label><br>
-
-                    <input type="radio" id="hair-greasy-heavy" name="hair-type" value="C" required>
-                    <label for="hair-greasy-heavy">Greasy, Heavy</label><br>
-                </fieldset><br>
-
-                <!-- Question 9: Color of Hair -->
-                <fieldset>
-                    <legend>9. Color of Hair:</legend>
-                    <input type="radio" id="hair-pale-brown" name="hair-color" value="A" required>
-                    <label for="hair-pale-brown">Pale Brown</label><br>
-
-                    <input type="radio" id="hair-red-or-brown" name="hair-color" value="B" required>
-                    <label for="hair-red-or-brown">Red or Brown</label><br>
-
-                    <input type="radio" id="hair-jet-black" name="hair-color" value="C" required>
-                    <label for="hair-jet-black">Jet Black</label><br>
-                </fieldset><br>
-
-                <!-- Question 10: Skin Type -->
-                <fieldset>
-                    <legend>10. Skin Type:</legend>
-                    <input type="radio" id="skin-dry-rough" name="skin-type" value="A" required>
-                    <label for="skin-dry-rough">Dry, Rough</label><br>
-
-                    <input type="radio" id="skin-soft-more-sweating-acne" name="skin-type" value="B" required>
-                    <label for="skin-soft-more-sweating-acne">Soft, More Sweating, Acne</label><br>
-
-                    <input type="radio" id="skin-moist-greasy" name="skin-type" value="C" required>
-                    <label for="skin-moist-greasy">Moist, Greasy</label><br>
-                </fieldset><br>
-
-                <!-- Question 11: Skin Complexion -->
-                <fieldset>
-                    <legend>11. Skin Complexion:</legend>
-                    <input type="radio" id="skin-dark-blackish" name="skin-complexion" value="A" required>
-                    <label for="skin-dark-blackish">Dark, Blackish</label><br>
-
-                    <input type="radio" id="skin-pink-to-red" name="skin-complexion" value="B" required>
-                    <label for="skin-pink-to-red">Pink to Red</label><br>
-
-                    <input type="radio" id="skin-glowing-white" name="skin-complexion" value="C" required>
-                    <label for="skin-glowing-white">Glowing, White</label><br>
-                </fieldset><br>
-
-                <!-- Question 12: Body Weight -->
-                <fieldset>
-                    <legend>12. Body Weight:</legend>
-                    <input type="radio" id="body-weight-low-difficult-to-put-on-weight" name="body-weight" value="A" required>
-                    <label for="body-weight-low-difficult-to-put-on-weight">Low, Difficult to Put on Weight</label><br>
-
-                    <input type="radio" id="body-weight-medium-can-easily-lose-or-gain-weight" name="body-weight" value="B" required>
-                    <label for="body-weight-medium-can-easily-lose-or-gain-weight">Medium, Can Easily Lose or Gain Weight</label><br>
-
-                    <input type="radio" id="body-weight-overweight-difficult-to-lose-weight" name="body-weight" value="C" required>
-                    <label for="body-weight-overweight-difficult-to-lose-weight">Overweight, Difficult to Lose Weight</label><br>
-                </fieldset><br>
-
-                <!-- Question 13: Nails -->
-                <fieldset>
-                    <legend>13. Nails:</legend>
-                    <input type="radio" id="nails-blackish-small-brittle" name="nails" value="A" required>
-                    <label for="nails-blackish-small-brittle">Blackish, Small, Brittle</label><br>
-
-                    <input type="radio" id="nails-reddish-small" name="nails" value="B" required>
-                    <label for="nails-reddish-small">Reddish, Small</label><br>
-
-                    <input type="radio" id="nails-pinkish-big-smooth" name="nails" value="C" required>
-                    <label for="nails-pinkish-big-smooth">Pinkish, Big, Smooth</label><br>
-                </fieldset><br>
-
-                <!-- Question 14: Size and Color of the Teeth -->
-                <fieldset>
-                    <legend>14. Size and Color of the Teeth:</legend>
-                    <input type="radio" id="teeth-very-big-or-very-small-irregular-blackish" name="teeth" value="A" required>
-                    <label for="teeth-very-big-or-very-small-irregular-blackish">Very Big or Very Small, Irregular, Blackish</label><br>
-
-                    <input type="radio" id="teeth-medium-sized-yellowish" name="teeth" value="B" required>
-                    <label for="teeth-medium-sized-yellowish">Medium-Sized, Yellowish</label><br>
-
-                    <input type="radio" id="teeth-large-shining-white" name="teeth" value="C" required>
-                    <label for="teeth-large-shining-white">Large, Shining White</label><br>
-                </fieldset><br>
-
-                <!-- Question 15: Pace of Performing Work -->
-                <fieldset>
-                    <legend>15. Pace of Performing Work:</legend>
-                    <input type="radio" id="pace-of-work-fast-always-in-a-hurry" name="pace-of-work" value="A" required>
-                    <label for="pace-of-work-fast-always-in-a-hurry">Fast, Always in a Hurry</label><br>
-
-                    <input type="radio" id="pace-of-work-medium-energetic" name="pace-of-work" value="B" required>
-                    <label for="pace-of-work-medium-energetic">Medium, Energetic</label><br>
-
-                    <input type="radio" id="pace-of-work-slow-steady" name="pace-of-work" value="C" required>
-                    <label for="pace-of-work-slow-steady">Slow, Steady</label><br>
-                </fieldset><br>
-
-                <!-- Question 16: Mental Activity -->
-                <fieldset>
-                    <legend>16. Mental Activity:</legend>
-                    <input type="radio" id="mental-activity-quick-restless" name="mental-activity" value="A" required>
-                    <label for="mental-activity-quick-restless">Quick, Restless</label><br>
-
-                    <input type="radio" id="mental-activity-smart-intellect-aggressive" name="mental-activity" value="B" required>
-                    <label for="mental-activity-smart-intellect-aggressive">Smart Intellect, Aggressive</label><br>
-
-                    <input type="radio" id="mental-activity-calm-stable" name="mental-activity" value="C" required>
-                    <label for="mental-activity-calm-stable">Calm, Stable</label><br>
-                </fieldset><br>
-
-                <!-- Question 17: Memory -->
-                <fieldset>
-                    <legend>17. Memory:</legend>
-                    <input type="radio" id="memory-short-term-bad" name="memory" value="A" required>
-                    <label for="memory-short-term-bad">Short Term Bad</label><br>
-
-                    <input type="radio" id="memory-good-memory" name="memory" value="B" required>
-                    <label for="memory-good-memory">Good Memory</label><br>
-
-                    <input type="radio" id="memory-long-term-is-best" name="memory" value="C" required>
-                    <label for="memory-long-term-is-best">Long Term is Best</label><br>
-                </fieldset><br>
-
-                <!-- Question 18: Grasping Power -->
-                <fieldset>
-                    <legend>18. Grasping Power:</legend>
-                    <input type="radio" id="grasping-power-grasps-quickly-but-not-completely-and-forgets-quickly" name="grasping-power" value="A" required>
-                    <label for="grasping-power-grasps-quickly-but-not-completely-and-forgets-quickly">Grasps Quickly but not Completely and Forgets Quickly</label><br>
-
-                    <input type="radio" id="grasping-power-grasps-quickly-but-completely-and-has-good-memory" name="grasping-power" value="B" required>
-                    <label for="grasping-power-grasps-quickly-but-completely-and-has-good-memory">Grasps Quickly but Completely and has Good Memory</label><br>
-
-                    <input type="radio" id="grasping-power-grasps-late-and-retains-for-a-longer-time" name="grasping-power" value="C" required>
-                    <label for="grasping-power-grasps-late-and-retains-for-a-longer-time">Grasps Late and Retains for a Longer Time</label><br>
-                </fieldset><br>
-
-                <!-- Question 19: Sleep Pattern -->
-                <fieldset>
-                    <legend>19. Sleep Pattern:</legend>
-                    <input type="radio" id="sleep-pattern-interrupted-less" name="sleep-pattern" value="A" required>
-                    <label for="sleep-pattern-interrupted-less">Interrupted, Less</label><br>
-
-                    <input type="radio" id="sleep-pattern-moderate" name="sleep-pattern" value="B" required>
-                    <label for="sleep-pattern-moderate">Moderate</label><br>
-
-                    <input type="radio" id="sleep-pattern-sleepy-lazy" name="sleep-pattern" value="C" required>
-                    <label for="sleep-pattern-sleepy-lazy">Sleepy, Lazy</label><br>
-                </fieldset><br>
-
-                <!-- Question 20: Intolerance to Weather Conditions -->
-                <fieldset>
-                    <legend>20. Intolerance to Weather Conditions:</legend>
-                    <input type="radio" id="weather-aversion-to-cold" name="weather-intolerance" value="A" required>
-                    <label for="weather-aversion-to-cold">Aversion to Cold</label><br>
-
-                    <input type="radio" id="weather-aversion-to-heat" name="weather-intolerance" value="B" required>
-                    <label for="weather-aversion-to-heat">Aversion to Heat</label><br>
-
-                    <input type="radio" id="weather-aversion-to-moist-rainy-cool" name="weather-intolerance" value="C" required>
-                    <label for="weather-aversion-to-moist-rainy-cool">Aversion to Moist, Rainy, and Cool Weather</label><br>
-                </fieldset><br>
-
-                <!-- Question 21: Weather Preferred -->
-                <fieldset>
-                    <legend>21. Weather Preferred:</legend>
-                    <input type="radio" id="preferred-weather-cold" name="preferred-weather" value="A" required>
-                    <label for="preferred-weather-cold">Cold</label><br>
-
-                    <input type="radio" id="preferred-weather-warm" name="preferred-weather" value="B" required>
-                    <label for="preferred-weather-warm">Warm</label><br>
-
-                    <input type="radio" id="preferred-weather-humid" name="preferred-weather" value="C" required>
-                    <label for="preferred-weather-humid">Humid</label><br>
-
-                    <input type="radio" id="preferred-weather-dry" name="preferred-weather" value="D" required>
-                    <label for="preferred-weather-dry">Dry</label><br>
-                </fieldset><br>
-
-                <!-- Question 22: Weather Not Preferred -->
-                <fieldset>
-                    <legend>22. Weather Not Preferred:</legend>
-                    <input type="radio" id="not-preferred-weather-cold" name="not-preferred-weather" value="A" required>
-                    <label for="not-preferred-weather-cold">Cold</label><br>
-
-                    <input type="radio" id="not-preferred-weather-warm" name="not-preferred-weather" value="B" required>
-                    <label for="not-preferred-weather-warm">Warm</label><br>
-
-                    <input type="radio" id="not-preferred-weather-humid" name="not-preferred-weather" value="C" required>
-                    <label for="not-preferred-weather-humid">Humid</label><br>
-
-                    <input type="radio" id="not-preferred-weather-dry" name="not-preferred-weather" value="D" required>
-                    <label for="not-preferred-weather-dry">Dry</label><br>
-                </fieldset><br>
-
-                <!-- Question 23: Reactions Under Adverse Situation -->
-                <fieldset>
-                    <legend>23. Reactions Under Adverse Situation:</legend>
-                    <input type="radio" id="adverse-reactions-anxiety-worry-irritability" name="adverse-reactions" value="A" required>
-                    <label for="adverse-reactions-anxiety-worry-irritability">Anxiety, Worry, Irritability</label><br>
-
-                    <input type="radio" id="adverse-reactions-anger-aggression" name="adverse-reactions" value="B" required>
-                    <label for="adverse-reactions-anger-aggression">Anger, Aggression</label><br>
-
-                    <input type="radio" id="adverse-reactions-calm-reclusive-sometimes-depressive" name="adverse-reactions" value="C" required>
-                    <label for="adverse-reactions-calm-reclusive-sometimes-depressive">Calm, Reclusive, Sometimes Depressive</label><br>
-                </fieldset><br>
-
-                <!-- Question 24: Mood -->
-                <fieldset>
-                    <legend>24. Mood:</legend>
-                    <input type="radio" id="mood-changes-quickly-have-frequent-mood-swings" name="mood" value="A" required>
-                    <label for="mood-changes-quickly-have-frequent-mood-swings">Changes Quickly, Have Frequent Mood Swings</label><br>
-
-                    <input type="radio" id="mood-changes-slowly" name="mood" value="B" required>
-                    <label for="mood-changes-slowly">Changes Slowly</label><br>
-
-                    <input type="radio" id="mood-stable-constant" name="mood" value="C" required>
-                    <label for="mood-stable-constant">Stable, Constant</label><br>
-                </fieldset><br>
-
-                <!-- Question 25: Eating Habit -->
-                <fieldset>
-                    <legend>25. Eating Habit:</legend>
-                    <input type="radio" id="eating-habit-eats-quickly-without-chewing-properly" name="eating-habit" value="A" required>
-                    <label for="eating-habit-eats-quickly-without-chewing-properly">Eats Quickly Without Chewing Properly</label><br>
-
-                    <input type="radio" id="eating-habit-eats-at-a-moderate-speed" name="eating-habit" value="B" required>
-                    <label for="eating-habit-eats-at-a-moderate-speed">Eats at a Moderate Speed</label><br>
-
-                    <input type="radio" id="eating-habit-chews-food-properly" name="eating-habit" value="C" required>
-                    <label for="eating-habit-chews-food-properly">Chews Food Properly</label><br>
-                </fieldset><br>
-
-                <!-- Question 26: Hunger -->
-                <fieldset>
-                    <legend>26. Hunger:</legend>
-                    <input type="radio" id="hunger-irregular-any-time" name="hunger" value="A" required>
-                    <label for="hunger-irregular-any-time">Irregular, Any Time</label><br>
-
-                    <input type="radio" id="hunger-sudden-hunger-pangs-sharp-hunger" name="hunger" value="B" required>
-                    <label for="hunger-sudden-hunger-pangs-sharp-hunger">Sudden Hunger Pangs, Sharp Hunger</label><br>
-
-                    <input type="radio" id="hunger-can-skip-any-meal-easily" name="hunger" value="C" required>
-                    <label for="hunger-can-skip-any-meal-easily">Can Skip any Meal Easily</label><br>
-                </fieldset><br>
-
-                <!-- Question 27: Food/Liquid Intake Amount -->
-                <fieldset>
-                    <legend>27. Food/Liquid Intake Amount:</legend>
-                    <input type="radio" id="food-intake-inconsistent-appetite" name="food-intake" value="A" required>
-                    <label for="food-intake-inconsistent-appetite">Inconsistent Appetite</label><br>
-
-                    <input type="radio" id="food-intake-strong-appetite" name="food-intake" value="B" required>
-                    <label for="food-intake-strong-appetite">Strong appetite</label><br>
-
-                    <input type="radio" id="food-intake-poor-appetite" name="food-intake" value="C" required>
-                    <label for="food-intake-poor-appetite">Poor appetite</label><br>
-                </fieldset><br>
-
-                <!-- Question 28: Food Inclinations -->
-                <fieldset>
-                    <legend>28. Food Inclinations:</legend>
-                    <input type="checkbox" id="food-inclination-sweet" name="food-inclinations[]" value="A">
-                    <label for="food-inclination-sweet">Sweet</label><br>
-
-                    <input type="checkbox" id="food-inclination-sour" name="food-inclinations[]" value="B">
-                    <label for="food-inclination-sour">Sour</label><br>
-
-                    <input type="checkbox" id="food-inclination-bitter" name="food-inclinations[]" value="C">
-                    <label for="food-inclination-bitter">Bitter</label><br>
-
-                    <input type="checkbox" id="food-inclination-astringent" name="food-inclinations[]" value="D">
-                    <label for="food-inclination-astringent">Astringent</label><br>
-
-                    <input type="checkbox" id="food-inclination-pungent" name="food-inclinations[]" value="E">
-                    <label for="food-inclination-pungent">Pungent</label><br>
-
-                    <input type="checkbox" id="food-inclination-salty" name="food-inclinations[]" value="F">
-                    <label for="food-inclination-salty">Salty</label><br>
-                </fieldset><br>
-
-                <!-- Question 29: Body Temperature -->
-                <fieldset>
-                    <legend>29. Body Temperature:</legend>
-                    <input type="radio" id="body-temperature-less-than-normal-hands-and-feet-are-cold" name="body-temperature" value="A" required>
-                    <label for="body-temperature-less-than-normal-hands-and-feet-are-cold">Less than Normal, Hands and Feet are Cold</label><br>
-
-                    <input type="radio" id="body-temperature-more-than-normal-face-and-forehead-hot" name="body-temperature" value="B" required>
-                    <label for="body-temperature-more-than-normal-face-and-forehead-hot">More than Normal, Face and Forehead Hot</label><br>
-
-                    <input type="radio" id="body-temperature-normal-hands-and-feet-slightly-cold" name="body-temperature" value="C" required>
-                    <label for="body-temperature-normal-hands-and-feet-slightly-cold">Normal, Hands and Feet Slightly Cold</label><br>
-                </fieldset><br>
-
-                <!-- Question 30: Pulse Diagnosis -->
-                <fieldset>
-                    <legend>30. Pulse Diagnosis:</legend>
-                    <input type="radio" id="pulse-snake-pulse-inconsistent" name="pulse-diagnosis" value="A" required>
-                    <label for="pulse-snake-pulse-inconsistent">Snake Pulse (inconsistent)</label><br>
-
-                    <input type="radio" id="pulse-frog-pulse-curved" name="pulse-diagnosis" value="B" required>
-                    <label for="pulse-frog-pulse-curved">Frog Pulse (curved)</label><br>
-
-                    <input type="radio" id="pulse-swan-peacock-pulse-soft" name="pulse-diagnosis" value="C" required>
-                    <label for="pulse-swan-peacock-pulse-soft">Swan/Peacock Pulse (soft)</label><br>
-                </fieldset><br>
-
-                <!-- Question 31: Joints -->
-                <fieldset>
-                    <legend>31. Joints:</legend>
-                    <input type="radio" id="joints-weak-noise-on-movement" name="joints" value="A" required>
-                    <label for="joints-weak-noise-on-movement">Weak, Noise on Movement</label><br>
-
-                    <input type="radio" id="joints-healthy-with-optimal-strength" name="joints" value="B" required>
-                    <label for="joints-healthy-with-optimal-strength">Healthy with Optimal Strength</label><br>
-
-                    <input type="radio" id="joints-heavy-weight-bearing" name="joints" value="C" required>
-                    <label for="joints-heavy-weight-bearing">Heavy Weight Bearing</label><br>
-                </fieldset><br>
-
-                <!-- Question 32: Nature -->
-                <fieldset>
-                    <legend>32. Nature:</legend>
-                    <input type="radio" id="nature-timid-jealous" name="nature" value="A" required>
-                    <label for="nature-timid-jealous">Timid, Jealous</label><br>
-
-                    <input type="radio" id="nature-egoistic-fearless" name="nature" value="B" required>
-                    <label for="nature-egoistic-fearless">Egoistic, Fearless</label><br>
-
-                    <input type="radio" id="nature-forgiving-grateful-not-greedy" name="nature" value="C" required>
-                    <label for="nature-forgiving-grateful-not-greedy">Forgiving, Grateful, Not Greedy</label><br>
-                </fieldset><br>
-
-                <!-- Question 33: Body Energy -->
-                <fieldset>
-                    <legend>33. Body Energy:</legend>
-                    <input type="radio" id="body-energy-becomes-low-in-the-evening-fatigues-after-less-work" name="body-energy" value="A" required>
-                    <label for="body-energy-becomes-low-in-the-evening-fatigues-after-less-work">Becomes Low in the Evening, Fatigues After Less Work</label><br>
-
-                    <input type="radio" id="body-energy-moderate-gets-tired-after-medium-work" name="body-energy" value="B" required>
-                    <label for="body-energy-moderate-gets-tired-after-medium-work">Moderate, Gets Tired After Medium Work</label><br>
-
-                    <input type="radio" id="body-energy-excellent-energy-throughout-the-day-not-easily-fatigued" name="body-energy" value="C" required>
-                    <label for="body-energy-excellent-energy-throughout-the-day-not-easily-fatigued">Excellent Energy Throughout the Day, Not Easily Fatigued</label><br>
-                </fieldset><br>
-
-                <!-- Question 34: Eyeball -->
-                <fieldset>
-                    <legend>34. Eyeball:</legend>
-                    <input type="radio" id="eyeball-unsteady-fast-moving" name="eyeball" value="A" required>
-                    <label for="eyeball-unsteady-fast-moving">Unsteady, Fast Moving</label><br>
-
-                    <input type="radio" id="eyeball-moving-slowly" name="eyeball" value="B" required>
-                    <label for="eyeball-moving-slowly">Moving Slowly</label><br>
-
-                    <input type="radio" id="eyeball-steady" name="eyeball" value="C" required>
-                    <label for="eyeball-steady">Steady</label><br>
-                </fieldset><br>
-
-                <!-- Question 35: Quality of Voice -->
-                <fieldset>
-                    <legend>35. Quality of Voice:</legend>
-                    <input type="radio" id="voice-rough-with-broken-words" name="voice-quality" value="A" required>
-                    <label for="voice-rough-with-broken-words">Rough with Broken Words</label><br>
-
-                    <input type="radio" id="voice-fast-commanding" name="voice-quality" value="B" required>
-                    <label for="voice-fast-commanding">Fast, Commanding</label><br>
-
-                    <input type="radio" id="voice-soft-and-deep" name="voice-quality" value="C" required>
-                    <label for="voice-soft-and-deep">Soft and Deep</label><br>
-                </fieldset><br>
-
-                <!-- Question 36: Dreams -->
-                <fieldset>
-                    <legend>36. Dreams:</legend>
-                    <input type="radio" id="dreams-sky-wind-flying-objects-and-confusion" name="dreams" value="A" required>
-                    <label for="dreams-sky-wind-flying-objects-and-confusion">Sky, Wind, Flying, Objects and Confusion</label><br>
-
-                    <input type="radio" id="dreams-fire-light-bright-colors-violence" name="dreams" value="B" required>
-                    <label for="dreams-fire-light-bright-colors-violence">Fire, Light, Bright Colors, Violence</label><br>
-
-                    <input type="radio" id="dreams-water-pools-gardens-and-good-relationships" name="dreams" value="C" required>
-                    <label for="dreams-water-pools-gardens-and-good-relationships">Water Pools, Gardens, and Good Relationships</label><br>
-                </fieldset><br>
-
-                <!-- Question 37: Social Relations -->
-                <fieldset>
-                    <legend>37. Social Relations:</legend>
-                    <input type="radio" id="social-relations-make-few-friends-prefers-solitude" name="social-relations" value="A" required>
-                    <label for="social-relations-make-few-friends-prefers-solitude">Make Few Friends, Prefers Solitude</label><br>
-
-                    <input type="radio" id="social-relations-good-number-of-friends" name="social-relations" value="B" required>
-                    <label for="social-relations-good-number-of-friends">Good Number of Friends</label><br>
-
-                    <input type="radio" id="social-relations-love-to-socialize-relationships-are-longer-lasting" name="social-relations" value="C" required>
-                    <label for="social-relations-love-to-socialize-relationships-are-longer-lasting">Love to Socialize. Relationships are Longer Lasting</label><br>
-                </fieldset><br>
-
-                <!-- Question 38: Wealth -->
-                <fieldset>
-                    <legend>Wealth:</legend>
-                    <input type="radio" id="wealth-spend" name="wealth" value="A" required>
-                    <label for="wealth-spend">Spends Without Thinking Much</label><br>
-
-                    <input type="radio" id="wealth-save" name="wealth" value="B" required>
-                    <label for="wealth-save">Saves but Spends on Valuable Things</label><br>
-
-                    <input type="radio" id="wealth-save-more" name="wealth" value="C" required>
-                    <label for="wealth-save-more">Prefers More Savings</label><br>
-                </fieldset><br>
-
-                <!-- Question 39: Bowel Movements -->
-                <fieldset>
-                    <legend>Bowel Movements:</legend>
-                    <input type="radio" id="bm-regular" name="bowel-movements" value="A" required>
-                    <label for="bm-regular">Regular</label><br>
-
-                    <input type="radio" id="bm-irregular" name="bowel-movements" value="B" required>
-                    <label for="bm-irregular">Irregular</label><br>
-
-                    <input type="radio" id="bm-variable" name="bowel-movements" value="C" required>
-                    <label for="bm-variable">Variable</label><br>
-                </fieldset><br>
-
-                <!-- Question 40: Stool Consistency -->
-                <fieldset>
-                    <legend>Stool Consistency:</legend>
-                    <input type="radio" id="sc-dry" name="stool-consistency" value="A" required>
-                    <label for="sc-dry">Dry, Hard, Blackish, Scanty Stools</label><br>
-
-                    <input type="radio" id="sc-soft" name="stool-consistency" value="B" required>
-                    <label for="sc-soft">Soft, Yellowish, Loose Stools</label><br>
-
-                    <input type="radio" id="sc-heavy" name="stool-consistency" value="C" required>
-                    <label for="sc-heavy">Heavy, Thick, Sticky Stools</label><br>
-                </fieldset><br>
-
-                <!-- Question 41: Level of Sweating -->
-                <fieldset>
-                    <legend>Level of Sweating:</legend>
-                    <input type="radio" id="sweating-normal" name="sweating" value="A" required>
-                    <label for="sweating-normal">Normal</label><br>
-
-                    <input type="radio" id="sweating-excessive" name="sweating" value="B" required>
-                    <label for="sweating-excessive">Excessive</label><br>
-
-                    <input type="radio" id="sweating-minimal" name="sweating" value="C" required>
-                    <label for="sweating-minimal">Minimal</label><br>
-                </fieldset><br>
-
-                <!-- Question 42: Walking Pace -->
-                <fieldset>
-                    <legend>Walking Pace:</legend>
-                    <input type="radio" id="pace-quick" name="walking-pace" value="A" required>
-                    <label for="pace-quick">Quick, Fast With Long Steps</label><br>
-
-                    <input type="radio" id="pace-average" name="walking-pace" value="B" required>
-                    <label for="pace-average">Average, Steady</label><br>
-
-                    <input type="radio" id="pace-slow" name="walking-pace" value="C" required>
-                    <label for="pace-slow">Slow with Short Steps</label><br>
-                </fieldset><br>
-
-                <!-- Question 43: Communication Skills -->
-                <fieldset>
-                    <legend>Communication Skills:</legend>
-                    <input type="radio" id="cs-fast" name="communication-skills" value="A" required>
-                    <label for="cs-fast">Fast, Irrelevant Talk, Speech not Clear</label><br>
-
-                    <input type="radio" id="cs-good" name="communication-skills" value="B" required>
-                    <label for="cs-good">Good Speakers with Genuine Argumentative Skills</label><br>
-
-                    <input type="radio" id="cs-authoritative" name="communication-skills" value="C" required>
-                    <label for="cs-authoritative">Authoritative, Firm, and Little Speech</label><br>
-                </fieldset><br>
+            <form id="prakritiForm" action="submit.php" method="POST">
+                <!-- General Questions -->
+                <h2>General Questions:</h2>
+                <div id="generalQuestions"></div>
+
+                <!-- MCQ Questions -->
+                <h2>MCQ Questions:</h2>
+                <div id="mcqQuestions"></div>
 
                 <div class="submit">
                 <input type="submit" value="Submit">
                 </div>
             </form>
         </section>
+        <section class="form">
+            <div id="submittedAnswers"></div>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2023 PhenoSense</p>
     </footer>
+
+    <script>
+        // General questions
+        var generalQuestions = [
+            "Name",
+            "Gender",
+            "Date of Birth",
+            // Add other general questions here
+        ];
+
+        // MCQ questions and options
+        var mcqQuestions = [
+            "Body Frame",
+            "Eye Size",
+            // Add other MCQ questions here
+        ];
+
+        var mcqOptions = [
+            ["A) Thin and Lean", "B) Medium", "C) Well Built"],
+            ["A) Small", "B) Medium", "C) Large"],
+            // Add other MCQ options here
+        ];
+
+        // Function to create general questions
+        function createGeneralQuestions() {
+            var generalDiv = document.getElementById("generalQuestions");
+            generalQuestions.forEach(function (question, index) {
+                var label = document.createElement("label");
+                label.setAttribute("for", "gen-" + index);
+                label.textContent = question + ": ";
+                var input = document.createElement("input");
+                input.setAttribute("type", "text");
+                input.setAttribute("id", "gen-" + index);
+                input.setAttribute("name", "gen-" + index);
+                input.setAttribute("required", "required");
+                generalDiv.appendChild(label);
+                generalDiv.appendChild(input);
+                generalDiv.appendChild(document.createElement("br"));
+            });
+        }
+
+        // Function to create MCQ questions
+        function createMCQQuestions() {
+            var mcqDiv = document.getElementById("mcqQuestions");
+            mcqQuestions.forEach(function (question, index) {
+                var fieldset = document.createElement("fieldset");
+                var legend = document.createElement("legend");
+                legend.textContent = (index + 1) + ". " + question + ":";
+                fieldset.appendChild(legend);
+
+                mcqOptions[index].forEach(function (option) {
+                    var input = document.createElement("input");
+                    input.setAttribute("type", "radio");
+                    input.setAttribute("id", "mcq-" + index + "-" + option.charAt(0));
+                    input.setAttribute("name", "mcq-" + index);
+                    input.setAttribute("value", option.charAt(0));
+                    var label = document.createElement("label");
+                    label.setAttribute("for", "mcq-" + index + "-" + option.charAt(0));
+                    label.textContent = option;
+                    fieldset.appendChild(input);
+                    fieldset.appendChild(label);
+                    fieldset.appendChild(document.createElement("br"));
+                });
+
+                mcqDiv.appendChild(fieldset);
+            });
+        }
+
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get submitted answers
+            var submittedAnswersDiv = document.getElementById("submittedAnswers");
+            submittedAnswersDiv.innerHTML = "<h2>Submitted Answers:</h2>";
+
+            generalQuestions.forEach(function (question, index) {
+                var input = document.getElementById("gen-" + index);
+                var answer = input.value;
+                submittedAnswersDiv.innerHTML += question + ": " + answer + "<br>";
+            });
+
+            mcqQuestions.forEach(function (question, index) {
+                var selectedOption = document.querySelector('input[name="mcq-' + index + '"]:checked');
+                var answer = selectedOption ? selectedOption.value : "Not answered";
+                submittedAnswersDiv.innerHTML += question + ": " + answer + "<br>";
+            });
+        }
+
+        // Create the form elements
+        createGeneralQuestions();
+        createMCQQuestions();
+
+        // Add form submission event listener
+        var form = document.getElementById("prakritiForm");
+        form.addEventListener("submit", handleSubmit);
+    </script>
+
 </body>
 </html>
