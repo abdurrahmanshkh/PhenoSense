@@ -48,15 +48,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #FAF1E4;
 }
 
 header {
     margin-top: 20px ;
     margin-right: 20px ;
     margin-left: 20px ;
-    background-color: #007BFF;
-    color: white;
+    background-color: #CCC8AA;
+    color: #191717;
     text-align: center;
     padding: 20px;
     border-radius: 5px;
@@ -74,7 +74,7 @@ footer {
 }
 
 .home {
-    background-color: white;
+    background-color: #F1EFEF;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -90,8 +90,8 @@ footer {
   .custom-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF; /* Modern blue color */
-    color: #fff; /* White text */
+    background-color: #CCC8AA;
+    color: #191717;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -102,7 +102,8 @@ footer {
   
   /* Hover Effect */
   .custom-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #191717;
+    color: #CCC8AA;
     transform: scale(1.05); /* Slight zoom effect on hover */
   }
   

@@ -28,11 +28,11 @@
         <section class="form">
             <form id="prakritiForm" action="submit.php" method="POST">
                 <!-- General Questions -->
-                <h2>General Questions:</h2>
+                <h2>Personal Information:</h2>
                 <div id="generalQuestions"></div>
 
                 <!-- MCQ Questions -->
-                <h2>MCQ Questions:</h2>
+                <h2>Assessment Questions:</h2>
                 <div id="mcqQuestions"></div>
 
                 <div class="submit">
@@ -224,7 +224,7 @@
                 input.setAttribute("type", "text");
                 input.setAttribute("id", "gen-" + index);
                 input.setAttribute("name", "gen-" + index);
-                input.setAttribute("required", "required");
+                //input.setAttribute("required", "required");
                 generalDiv.appendChild(label);
                 generalDiv.appendChild(input);
                 generalDiv.appendChild(document.createElement("br"));
@@ -269,14 +269,24 @@
             generalQuestions.forEach(function (question, index) {
                 var input = document.getElementById("gen-" + index);
                 var answer = input.value;
-                submittedAnswersDiv.innerHTML += question + ": " + answer + "<br>";
+                displayAnswer(submittedAnswersDiv, question, answer);
             });
 
             mcqQuestions.forEach(function (question, index) {
                 var selectedOption = document.querySelector('input[name="mcq-' + index + '"]:checked');
-                var answer = selectedOption ? selectedOption.value : "Not answered";
-                submittedAnswersDiv.innerHTML += question + ": " + answer + "<br>";
+                var answer = selectedOption ? selectedOption.nextElementSibling.textContent : "Not answered";
+                displayAnswer(submittedAnswersDiv, question, answer);
             });
+        }
+
+        // Function to display answers with bold questions and line breaks
+        function displayAnswer(container, question, answer) {
+            var questionElement = document.createElement("strong");
+            questionElement.textContent = question + ": ";
+            container.appendChild(questionElement);
+            container.appendChild(document.createTextNode(answer));
+            container.appendChild(document.createElement("br")); // Add a line break
+            container.appendChild(document.createElement("br")); // Add an extra line break for spacing
         }
 
         // Create the form elements
