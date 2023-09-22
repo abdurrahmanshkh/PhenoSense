@@ -1,3 +1,11 @@
+.buttonarea {
+  text-align: center;
+  background-color: #F1EFEF;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 /*Logo styles*/
 .logo-box {
   box-shadow: 0 0 0 5px grey;
@@ -52,70 +60,66 @@ body {
 }
 
 header {
-    margin-top: 20px ;
-    margin-right: 20px ;
-    margin-left: 20px ;
-    background-color: #CCC8AA;
-    color: #191717;
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
+  margin-top: 10px ;
+  margin-right: 10px ;
+  margin-left: 10px ;
+  background-color: #CCC8AA;
+  color: #191717;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  padding: 10px;
 }
 
 .home {
-    background-color: #F1EFEF;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  background-color: #F1EFEF;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Center-align the button container */
 .button-container {
-    text-align: center;
-    margin-top: 20px; /* Add some space at the top if needed */
-  }
+  text-align: center;
+  margin-top: 0px; /* Add some space at the top if needed */
+}
   
   /* Base Button Styles */
-  .custom-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #CCC8AA;
-    color: #191717;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-size: 16px;
-    text-decoration: none; /* Remove default link underline */
-  }
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #CCC8AA;
+  color: #191717;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  text-decoration: none; /* Remove default link underline */
+}
   
   /* Hover Effect */
-  .custom-button:hover {
-    background-color: #191717;
-    color: #CCC8AA;
-    transform: scale(1.05); /* Slight zoom effect on hover */
-  }
+.custom-button:hover {
+  background-color: #191717;
+  color: #CCC8AA;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
   
-  /* Focus (Keyboard Navigation) */
-  .custom-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Light blue shadow on focus */
-  }
-  
-  /* Media Query for Responsiveness (adjust as needed) */
-  @media (max-width: 768px) {
-    .custom-button {
-      font-size: 14px;
-    }
-  }
+/* Focus (Keyboard Navigation) */
+.custom-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Light blue shadow on focus */
+}

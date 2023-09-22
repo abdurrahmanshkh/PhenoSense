@@ -1,3 +1,5 @@
+<!-- form.html file: -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +13,10 @@
         <div class="logo-box">
             <img src="logo.png" alt="PhotoSense Logo" class="logo">
         </div>
-        <br>
         <div class="buttons">
             <a href="index.html">Home</a>
             <a href="form.html">Prakriti Assessment</a>
+            <a href="report.html">Prakriti Report</a>
             <br>
             <br>
         </div>
@@ -25,21 +27,21 @@
     </header>
 
     <main>
-        <section class="form">
-            <form id="prakritiForm" action="submit.php" method="POST">
+        <form id="prakritiForm" action="submit.php" method="POST">
+            <section class="form">
                 <!-- General Questions -->
                 <h2>Personal Information:</h2>
                 <div id="generalQuestions"></div>
-
                 <!-- MCQ Questions -->
                 <h2>Assessment Questions:</h2>
                 <div id="mcqQuestions"></div>
-
+            </section>
+            <section class="buttonarea">
                 <div class="submit">
                 <input type="submit" value="Submit">
                 </div>
+            </section>
             </form>
-        </section>
         <section class="report">
             <div id="submittedAnswers"></div>
         </section>
