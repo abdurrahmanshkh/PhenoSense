@@ -43,11 +43,11 @@ strong {
 .logo-box {
     box-shadow: 0 0 0 5px grey;
     margin: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 5px;
     padding: 10px; /* You can adjust the padding to your preference */
-    display: inline-block; /* To make the box fit the content width */
-  }
+    /* display: inline-block; */
+}
   
 .logo-box img {
     display: block; /* To remove any extra space below the image */

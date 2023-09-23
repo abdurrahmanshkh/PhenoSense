@@ -221,7 +221,7 @@ function handleSubmit(event) {
   
     // Get submitted answers
     var submittedAnswersDiv = document.getElementById("submittedAnswers");
-    submittedAnswersDiv.innerHTML = "<h2>Prakriti Assessment Report:</h2>";
+    submittedAnswersDiv.innerHTML = "<h3>Personal Information:</h3>";
   
     generalQuestions.forEach(function (question, index) {
       var input = document.getElementById("gen-" + index);
