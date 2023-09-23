@@ -1,24 +1,51 @@
+/* Style for the logo tab */
+.logo-tab {
+    background-color: #333; /* Background color for the logo tab */
+    padding: 20px 0; /* Adjust the padding as needed */
+    text-align: center;
+}
+
+/* Style for the logo */
+.logo {
+    display: inline-block;
+    max-width: 100%;
+    height: 40px; /* Limit the height of the logo to 50 pixels */
+}
+
+/* Style for the buttons tab */
+.buttons-tab {
+    background-color: rgb(70, 70, 70); /* Background color for the buttons tab */
+    padding: 20px 0; /* Adjust the padding as needed */
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* Style for the buttons */
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
 .buttonarea {
     text-align: center;
     background-color: #F1EFEF;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/*Logo styles*/
-.logo-box {
-    box-shadow: 0 0 0 5px grey;
-    margin: 15px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px; /* You can adjust the padding to your preference */
-    /* display: inline-block; */
-}
-  
-.logo-box img {
-    display: block; /* To remove any extra space below the image */
-    margin: 0 auto; /* Center the image horizontally within the box */
 }
 
 /* Base Button Styles */
@@ -48,37 +75,6 @@ input[type="submit"]:hover {
 input[type="submit"]:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Light blue shadow on focus */
-}
-
-  
-/* Header tab styles */
-.tab {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.logo {
-    display: block;
-    margin: 20px auto;
-    max-width: 150px; /* Adjust the max-width as needed */
-}
-.buttons {
-    margin-top: 10px;
-}
-.buttons a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px; /* Add padding to create boxes around the buttons */
-    border: 2px solid #fff; /* Add a border to create boxes */
-    margin: 0 20px;
-    border-radius: 5px; /* Add rounded corners for a nicer look */
-}
-.buttons a:hover {
-    background-color: #fff;
-    color: #333;
 }
 
 /* Add your CSS styles here */
