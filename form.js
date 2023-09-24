@@ -6,38 +6,26 @@ var generalQuestions = [
   "Gender",
   "Date of Birth",
   "Age",
-  "Father's Full Name",
-  "Mother's Full Name",
-  "Place of Birth",
-  "Present Address",
-  "Permanent Address",
-  "Marital Status",
-  "Religion",
-  "Caste",
-  "Sub-caste",
-  "Height",
-  "Weight",
-  "Blood Group",
-  "Educational Qualification",
-  "Socio-Economic Status",
   "Contact Number",
   "Email ID",
-  "Personal History",
-  "Food Habits",
-  "Micturition",
-  "Bowel Habits",
-  "Sleep",
-  "Occupation",
+  "Father's Name",
+  "Mother's Name",
+  "Place of Birth",
+  "Address",
+  "Marital Status",
+  "Number of persons in the family",
+  "Educational Qualification",
+  "Socio-Economic Status",
   "Previous History of Illness (Yes/No)",
   "If Yes, What was the nature of Illness",
   "Age at which the Illness was suffered",
   "Duration of suffering",
   "Medical Consultation undertaken",
   "Aftermath of Illness",
-  "Family History",
-  "Number of persons in the family",
   "Family History of disease",
-  "Consanguinity",
+  "Height",
+  "Weight",
+  "Blood Group",
   "Head Circumference (inch)",
   "Chest Circumference (inch)",
   "Neck Circumference (inch)",
@@ -144,6 +132,7 @@ var mcqOptions = [
   ["A) Fast, Irrelevant Talk, Speech not Clear", "B) Good Speakers with Genuine Argumentative Skills", "C) Authoritative, Firm, and Little Speech"]
 ];
 
+
 // Defining lists
 const vatalist = [
   'A', 0, 0, 0, 0, 0, 0, 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 0, 0, 'A', 'A', 'A', 'A', 'A', 0, 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 0, 'A', 'A', 'A', 'A'
@@ -210,10 +199,6 @@ function createMCQQuestions() {
     mcqDiv.appendChild(fieldset);
   });
 }
-
-// form.js file
-
-// ... (Previous code)
 
 // Function to handle form submission
 function handleSubmit(event) {
@@ -310,9 +295,6 @@ function handleSubmit(event) {
     // Navigate to the report page
     window.location.href = "report.html";
   }
-  
-  // ... (Rest of the code)
-  
 
 // Prakriti Assessment Report
 // Function to display answers with bold questions and line breaks
